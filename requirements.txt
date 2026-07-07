@@ -1,0 +1,10 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+pytest
+httpx
+sentence-transformers
+numpy
+requests
+python-dotenv
+

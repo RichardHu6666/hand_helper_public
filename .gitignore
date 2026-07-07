@@ -1,0 +1,29 @@
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environment and machine-specific config
+.venv/
+.env
+.env.*
+
+# Runtime logs and temporary resume artifacts
+codex_resume_logs/
+*.log
+*.out
+
+# Historical nested copy; the outer project is the deployable source tree.
+/sign_cloud_v1/
+
+# Generated database backups and local scratch files
+data/*backup*.sqlite3
+*.tmp
+*.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

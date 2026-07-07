@@ -1,0 +1,75 @@
+﻿SEED_WORDS = [
+    {
+        "id": 1,
+        "word": "浣犲ソ",
+        "word_description": "鏃ュ父闂€欍€?,
+        "action_description": "鍗曟墜鎴栧弻鎵嬶紝鎵嬪湪韬綋鍓嶆柟锛屽乏鍙虫垨鍚戝绉诲姩锛岃〃杈鹃棶鍊欍€?,
+    },
+    {
+        "id": 2,
+        "word": "璋㈣阿",
+        "word_description": "琛ㄨ揪鎰熻阿銆?,
+        "action_description": "鍗曟墜浠庤劯閮ㄦ垨涓嬪反闄勮繎鍚戝墠鎺ㄥ嚭锛岃〃绀烘劅璋€?,
+    },
+    {
+        "id": 3,
+        "word": "鍐嶈",
+        "word_description": "鍛婂埆鐢ㄨ銆?,
+        "action_description": "鍗曟墜浜旀寚寮犲紑锛屽湪韬綋鍓嶆柟宸﹀彸鎸ュ姩銆?,
+    },
+    {
+        "id": 4,
+        "word": "鎴?,
+        "word_description": "鎸囦唬鑷繁銆?,
+        "action_description": "鍗曟墜椋熸寚鎸囧悜鑳稿墠鎴栬创浜庤兏鍓嶃€?,
+    },
+    {
+        "id": 5,
+        "word": "浣?,
+        "word_description": "鎸囦唬瀵规柟銆?,
+        "action_description": "鍗曟墜椋熸寚浠庤韩浣撳墠鏂瑰悜澶栨寚鍚戝鏂广€?,
+    },
+    {
+        "id": 6,
+        "word": "甯姪",
+        "word_description": "璇锋眰鎴栨彁渚涘府鍔┿€?,
+        "action_description": "鍙屾墜鍔ㄤ綔锛屼竴鎵嬫墭浣忓彟涓€鎵嬪苟鍚戜笂绉诲姩銆?,
+    },
+    {
+        "id": 7,
+        "word": "姘?,
+        "word_description": "楗敤姘存垨娑蹭綋銆?,
+        "action_description": "鍗曟墜鍦ㄥ槾杈规垨鑴搁儴闄勮繎锛屾墜鍨嬪彲鍙樺寲锛岀煭鏆傚仠鐣欍€?,
+    },
+    {
+        "id": 8,
+        "word": "鍘曟墍",
+        "word_description": "琛ㄧず鍗敓闂淬€?,
+        "action_description": "鍗曟墜鍦ㄨ韩浣撲竴渚ф垨鑳稿墠閲嶅鎽嗗姩锛屽父鐢ㄤ簬璇㈤棶鍦扮偣銆?,
+    },
+    {
+        "id": 9,
+        "word": "瑕?,
+        "word_description": "琛ㄧず闇€瑕佹垨鎯宠銆?,
+        "action_description": "鍗曟墜鎴栧弻鎵嬩粠韬綋鍓嶆柟鍚戝唴闈犺繎锛岃〃绀烘兂瑕併€?,
+    },
+    {
+        "id": 10,
+        "word": "涓嶈",
+        "word_description": "琛ㄧず鎷掔粷鎴栧惁瀹氥€?,
+        "action_description": "鍗曟墜鍦ㄨ韩浣撳墠鏂瑰乏鍙虫憜鍔紝琛ㄨ揪涓嶈鎴栧惁瀹氥€?,
+    },
+    {
+        "id": 11,
+        "word": "濂?,
+        "word_description": "琛ㄧず鑲畾銆佽壇濂姐€?,
+        "action_description": "鍗曟墜鎷囨寚绔栬捣鎴栨帉褰㈠悜鍓嶏紝鍔ㄤ綔淇濇寔涓嶅姩銆?,
+    },
+    {
+        "id": 12,
+        "word": "鍧?,
+        "word_description": "琛ㄧず涓嶅ソ銆佽礋闈€?,
+        "action_description": "鍗曟墜鍚戜笅绉诲姩鎴栫炕杞紝琛ㄧず涓嶅ソ銆?,
+    },
+]
+

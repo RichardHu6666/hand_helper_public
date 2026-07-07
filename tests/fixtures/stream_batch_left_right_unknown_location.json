@@ -1,0 +1,105 @@
+﻿{
+  "session_id": "fixture-batch-unknown-location",
+  "debug": false,
+  "frames": [
+    {
+      "client_seq": 1,
+      "timestamp": "260702-000014-001",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "hold",
+        "relative_motion": "hold",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "unknown",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 2,
+      "timestamp": "260702-000014-002",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "hold",
+        "relative_motion": "hold",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 3,
+      "timestamp": "260702-000014-003",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "left_right",
+        "relative_motion": "right_to_left",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 4,
+      "timestamp": "260702-000014-004",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "left_right",
+        "relative_motion": "right_to_left",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 5,
+      "timestamp": "260702-000014-005",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "left_right",
+        "relative_motion": "right_to_left",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 6,
+      "timestamp": "260702-000014-006",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "left_right",
+        "relative_motion": "right_to_left",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    },
+    {
+      "client_seq": 7,
+      "timestamp": "260702-000014-007",
+      "primitive": {
+        "hand_count": 1,
+        "dominant_side": "signer_right",
+        "location": "unknown",
+        "movement": "left_right",
+        "relative_motion": "right_to_left",
+        "bimanual_relation": "single_hand",
+        "dominant_shape": "five",
+        "nondominant_shape": "no_hand"
+      }
+    }
+  ]
+}
+
