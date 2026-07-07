@@ -1,0 +1,4 @@
+﻿# Extra glyphs for fixed UI text, diagnostics, and near-term cloud output.
+鎵嬭閫氫簯绔姸鎬佽瘝鍙ヨ瘑鍒‘璁ゅけ璐ヨ繛鎺ヨ秴鏃堕敊璇瓑寰呯粨鏋?
+瀛︽牎鍖婚櫌閾惰鎵嬫満鐢佃瘽璇疯阿璋㈠涓嶈捣鍐嶈鍘曟墍姘村府鍔╁畨鍏ㄥ畨闈欓珮鍏?
+

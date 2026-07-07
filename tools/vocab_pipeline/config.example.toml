@@ -1,0 +1,23 @@
+﻿[paths]
+epub_path = "<PROJECT_ROOT>/鍥藉閫氱敤鎵嬭璇嶈〃.epub"
+output_dir = "<PROJECT_ROOT>/data/vocab_pipeline"
+sqlite_path = "<PROJECT_ROOT>/data/vocab_pipeline/sign_vocab.sqlite3"
+
+[deepseek]
+api_key = ""
+base_url = "https://api.deepseek.com"
+flash_model = "deepseek-v4-flash"
+pro_model = "deepseek-v4-pro"
+
+[llm]
+enable_llm_review = true
+flash_max_concurrency = 32
+pro_max_concurrency = 8
+request_timeout_sec = 60
+max_retries = 3
+review_low_confidence_only = true
+
+[pipeline]
+batch_size = 200
+progress_every = 50
+

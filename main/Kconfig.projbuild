@@ -1,0 +1,204 @@
+﻿menu "Gesture Debug"
+
+config GESTURE_DETECT_INTERVAL_MS
+    int "Gesture detect interval (ms)"
+    range 50 1000
+    default 66
+    help
+        Minimum time between two hand-detect passes.
+
+config GESTURE_STABLE_FRAMES
+    int "Stable frames for gesture lock"
+    range 1 10
+    default 2
+    help
+        Consecutive frames required before the primary gesture is marked stable.
+
+config GESTURE_MIN_SCORE
+    int "Minimum gesture score (%)"
+    range 1 100
+    default 55
+    help
+        Minimum classifier score required before a gesture can become stable.
+
+config GESTURE_LOG_EVERY_N_FRAMES
+    int "Print raw detect/classify log every N frames"
+    range 1 120
+    default 10
+    help
+        Smaller values print more logs and make live debugging easier.
+
+config GESTURE_SHOW_SECONDARY_HAND
+    bool "Show secondary hand result in UI"
+    default y
+    help
+        When enabled and two hands are detected, the second hand classification
+        is also shown in the UI panel.
+
+config GESTURE_DEBUG_PRIMARY_ONLY
+    bool "Debug primary hand only"
+    default y
+    help
+        Focus detailed classification debug output on the primary hand result.
+        Primitive extraction still keeps up to two detected hands.
+
+config GESTURE_DEBUG_SUMMARY_INTERVAL
+    int "Primary gesture summary interval"
+    range 1 240
+    default 30
+    help
+        Number of classified primary-hand frames between periodic summary logs.
+
+config GESTURE_PRIMITIVE_LOG_EVERY_N_FRAMES
+    int "Print primitive log every N classified frames"
+    range 1 120
+    default 10
+    help
+        Smaller values print more hands_raw and primitive logs for local
+        primitive v1 debugging.
+
+config PRIMITIVE_MOTION_DEBUG_LOG
+    bool "Print primitive motion metric logs"
+    default n
+    help
+        Print normalized dx/dy, area ratio, raw movement, latched movement,
+        and relative motion for tuning left/right, up/down, and toward/away.
+
+config GESTURE_DEBUG_SHOW_PROFILE
+    bool "Show crop profile in UI"
+    default y
+    help
+        Display the current classification crop profile such as normal/slender.
+
+endmenu
+
+menu "Cloud Link"
+
+config CLOUD_ENABLE
+    bool "Enable cloud upload and UI feedback"
+    default y
+    help
+        Upload primitive frames to the cloud matcher and show cloud word/sentence
+        results on the device UI.
+
+config WIFI_SSID
+    string "Wi-Fi SSID"
+    default "<YOUR_WIFI_SSID>"
+
+config WIFI_PASSWORD
+    string "Wi-Fi password"
+    default "<YOUR_WIFI_PASSWORD>"
+
+config CLOUD_BASE_URL
+    string "Cloud base URL"
+    default "<YOUR_SERVER_URL>"
+
+config CLOUD_SESSION_ID
+    string "Cloud session id"
+    default "esp32p4-dev-001"
+
+config CLOUD_TIMESTAMP_DATE_YYMMDD
+    string "Timestamp date prefix YYMMDD"
+    default "260702"
+
+config CLOUD_HTTP_TIMEOUT_MS
+    int "Cloud HTTP timeout (ms)"
+    range 500 10000
+    default 10000
+
+config CLOUD_UPLOAD_SAMPLE_MS
+    int "Cloud active upload sample interval (ms)"
+    range 100 1000
+    default 250
+
+config CLOUD_UPLOAD_IDLE_HEARTBEAT_MS
+    int "Cloud idle upload heartbeat interval (ms)"
+    range 500 5000
+    default 1000
+
+config CLOUD_NORMALIZE_GRACE_MS
+    int "Cloud shape/location normalize grace (ms)"
+    range 300 3000
+    default 1500
+
+config CLOUD_ACTIVE_MOVEMENT_GRACE_MS
+    int "Cloud active movement grace (ms)"
+    range 200 2000
+    default 800
+
+config CLOUD_FRAME_QUEUE_LEN
+    int "Cloud frame queue length"
+    range 4 64
+    default 24
+
+config CLOUD_BATCH_ENABLE
+    bool "Enable cloud batch upload"
+    default y
+    help
+        Prefer POST /api/v1/stream/frames and fall back to single-frame upload
+        when the cloud endpoint is unavailable.
+
+config CLOUD_BATCH_MAX_FRAMES
+    int "Cloud batch max frames"
+    range 1 6
+    default 4
+
+config CLOUD_BATCH_MAX_WAIT_MS
+    int "Cloud batch max wait (ms)"
+    range 100 2000
+    default 900
+
+config CLOUD_BATCH_ACTIVE_MIN_FRAMES
+    int "Cloud batch active minimum frames"
+    range 1 6
+    default 3
+
+config CLOUD_BATCH_IDLE_MAX_FRAMES
+    int "Cloud batch idle max frames"
+    range 1 4
+    default 2
+
+config CLOUD_BATCH_DROP_ON_FAIL
+    bool "Drop failed cloud batch"
+    default y
+    help
+        Do not retry old batch payloads after an HTTP failure. This avoids
+        stale motion frames contaminating the cloud rolling buffer.
+
+config CLOUD_SHAPE_ACTIVE_HOLD_MS
+    int "Cloud active shape hold (ms)"
+    range 500 6000
+    default 6000
+
+config CLOUD_SHAPE_UNKNOWN_ON_ACTIVE_WITHOUT_CACHE
+    bool "Use unknown shape during active motion without cache"
+    default y
+    help
+        Send dominant_shape=unknown during active movement when no stable
+        static shape cache is available. This matches the v2 cloud schema
+        where unknown is neither a hit nor a conflict.
+
+config CLOUD_REQUIRE_SHAPE_CACHE_FOR_ACTIVE
+    bool "Skip active cloud frames without shape cache"
+    default y
+    help
+        Do not upload active movement frames when the cloud upload layer has
+        no concrete dominant shape cache. This avoids polluting the cloud
+        rolling buffer with left_right/up_down frames whose shape is unknown.
+
+config CLOUD_DEBUG_LOG
+    bool "Enable extra cloud debug logs"
+    default n
+
+endmenu
+
+menu "Display UI"
+
+config UI_SHOW_REJECT_LINE
+    bool "Show primitive reject counters"
+    default n
+    help
+        Show edge/small/weak reject counters in the top-left debug panel.
+
+endmenu
+

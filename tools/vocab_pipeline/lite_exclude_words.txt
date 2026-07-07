@@ -1,0 +1,53 @@
+﻿# Lite v3 stable demo exclusions.
+# Format: word # reason
+# These words remain in the full vocabulary. They are only excluded from the
+# stable lite demo DB because current v1 primitives cannot separate them well.
+
+涓嶆槸 # high collision in 1|left_right|single_hand; abstract negation needs context
+鍚?# direction/temporal fragment, collides with left_right group
+鏉?# generic motion word, collides with left_right group
+浠€涔?# question fragment, high ambiguity
+璋?# question fragment, collides with toilet/slow signature
+涓?# direction fragment, collides in up_down group
+涓?# direction fragment, collides in up_down group
+鍓?# direction fragment, broad toward_away meaning
+宸?# direction fragment, broad toward_away meaning
+鍙?# direction fragment, broad toward_away meaning
+閭ｉ噷 # location fragment, high collision
+杩欓噷 # location fragment, high collision
+
+鍖?# high collision in 2|up_down|unknown|dual_hand
+绗旇鏈數鑴?# high collision in dual_hand up_down/repeat groups
+鑼?# high collision in 2|up_down|unknown|dual_hand
+瓒呭競 # high collision in 2|up_down|unknown|dual_hand
+鍦伴搧 # high collision in 2|up_down|unknown|dual_hand
+宸ヤ綔鈶?# high collision, duplicate/common work-related signatures
+宸ヤ綔鏈?# high collision in 2|up_down|unknown|dual_hand
+寮€濮?# high collision in 2|up_down|unknown|dual_hand
+涔?# high collision in 2|up_down|unknown|dual_hand
+鍗?# high collision in 2|up_down|unknown|dual_hand
+涓婄彮 # high collision in up_down groups
+涓嬬彮 # high collision in up_down groups
+闉?# high collision in 2|up_down|unknown|dual_hand
+妗屽瓙 # high collision in 2|up_down|unknown|dual_hand
+闈㈡潯 # high collision in 2|up_down|dual_hand
+鍧?# high collision in 2|up_down|dual_hand
+鍋?# high collision in 2|up_down|dual_hand
+
+寮熷紵 # high collision in 1|repeat|single_hand
+鍝ュ摜 # high collision in 1|repeat|single_hand
+鍏氦杞?# high collision in 1|repeat|single_hand
+璀﹀療 # high collision in 1|repeat|single_hand
+鐢?# high collision in 1|repeat|single_hand
+鐥涜嫤 # broad/duplicate pain concept; keep 鐤肩棝
+鍗遍櫓鈶?# duplicate risk concept; keep 鍗遍櫓鈶?if present in lite
+琛ｆ湇 # high collision in 1|repeat|single_hand
+鍦嗙彔绗?# high collision in 1|repeat|single_hand
+璧?# generic motion word, high collision in repeat/toward groups
+
+鍐烽潤 # collides with left_right group and is less core than retained scene words
+鎱?# collides with 鍘曟墍/璋?signature, less stable as demo word
+鍚屼簨 # collides with left_right/up_down groups
+鍚屽 # collides with left_right group; keep 瀛︾敓/鏈嬪弸-style role coverage
+鍑虹杞?# broad toward_away collision; keep 鍏氦/鍦伴搧 alternatives out of stable v3
+
